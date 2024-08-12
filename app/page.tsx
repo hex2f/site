@@ -9,8 +9,16 @@ export default async function Home() {
   console.log(posts);
   return (
     <main className="px-8 sm:px-16 py-24 sm:py-32 flex flex-col gap-2 text-balance">
-      <h1 className="font-bold text-lg"># leah lundqvist <span className="text-gray-600 font-normal">{'//'}software engineer, dj, and hardware hobbyist</span></h1>
-      <p className="max-w-2xl">a multi-disciplinary software engineer with a passion for building wonderful user experiences backed by solid engineering principles.</p>
+      <h1 className="font-bold text-lg"># leah lundqvist</h1>
+      
+      <p className="max-w-2xl">a multi-disciplinary software engineer with a passion for building wonderful user experiences backed by solid engineering principles. dj, music producer, and hardware hobbyist.</p>
+
+      <div className="flex gap-2">
+        <a href="https://github.com/hex2f" className="text-blue-500">[github]</a>
+        <a href="https://twitter.com/LeahLundqvist" className="text-blue-500">[twitter]</a>
+        <a href="https://linkedin.com/in/hex2f" className="text-blue-500">[linkedin]</a>
+        <a href="https://soundcloud.com/lelowx" className="text-blue-500">[soundcloud]</a>
+      </div>
     
       <h2 className="font-bold mt-4">## experience</h2>
       <ul className="list-disc list-inside flex flex-col gap-2 sm:gap-0">
