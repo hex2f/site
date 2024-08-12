@@ -8,12 +8,22 @@ const berkeleyMono = localFont({
 		{
 			path: "./(fonts)/BerkeleyMonoVariable-Regular.woff2",
 			style: "normal",
-			weight: "100 150",
+			weight: "100",
+		},
+		{
+			path: "./(fonts)/BerkeleyMonoVariable-Regular.woff2",
+			style: "normal",
+			weight: "150",
 		},
 		{
 			path: "./(fonts)/BerkeleyMonoVariable-Italic.woff2",
 			style: "italic",
-			weight: "100 150",
+			weight: "100",
+		},
+		{
+			path: "./(fonts)/BerkeleyMonoVariable-Italic.woff2",
+			style: "italic",
+			weight: "150",
 		},
 	],
 	variable: "--font-berkeley",
@@ -33,7 +43,7 @@ export default function RootLayout({
       <body className={classNames(
 					berkeleyMono.className,
 					berkeleyMono.variable,
-					"flex min-h-screen flex-col bg-white",
+					"flex min-h-screen flex-col bg-white font-thin",
 				)}>{children}</body>
     </html>
   );

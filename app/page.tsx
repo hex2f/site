@@ -13,11 +13,11 @@ export default async function Home() {
       
       <p className="max-w-2xl">a multi-disciplinary software engineer with a passion for building wonderful user experiences backed by solid engineering principles. dj, music producer, and hardware hobbyist.</p>
 
-      <div className="flex gap-2">
-        <a href="https://github.com/hex2f" className="text-blue-500">[github]</a>
-        <a href="https://twitter.com/LeahLundqvist" className="text-blue-500">[twitter]</a>
-        <a href="https://linkedin.com/in/hex2f" className="text-blue-500">[linkedin]</a>
-        <a href="https://soundcloud.com/lelowx" className="text-blue-500">[soundcloud]</a>
+      <div className="flex gap-2 flex-wrap">
+        <a href="https://github.com/hex2f">[github]</a>
+        <a href="https://twitter.com/LeahLundqvist">[twitter]</a>
+        <a href="https://linkedin.com/in/hex2f">[linkedin]</a>
+        <a href="https://soundcloud.com/lelow">[soundcloud]</a>
       </div>
     
       <h2 className="font-bold mt-4">## experience</h2>
@@ -52,7 +52,7 @@ function Experience({ years, title, at }: { years: [number, number], title: stri
         <div className="flex gap-2">
           <a href={`/experience/${at.name}`} className="text-blue-500">{title}</a>
           <span className="opacity-75">at</span>
-          <a href={at.url} className="text-blue-500">{at.name}</a>
+          <a href={at.url}>{at.name}</a>
         </div>
         <div className="flex gap-2">
           <span className="opacity-75">during</span>

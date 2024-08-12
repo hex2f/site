@@ -36,7 +36,7 @@ export default async function BlogPost({
 	const { content, frontmatter } = await getCachedPost(params.slug);
 
 	return (
-		<main className="p-8 sm:p-16 flex flex-col gap-2 text-balance max-w-6xl">
+		<main className="p-8 sm:p-16 flex flex-col gap-2 max-w-6xl">
 			<Link href="/" className="text-link hover:opacity-70 absolute left-8 sm:left-16">
 				<span className="">&lt;- home</span>
 			</Link>
