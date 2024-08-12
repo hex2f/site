@@ -14,10 +14,10 @@ const highlighterOptions: Options = {
 	getHighlighter: (options) =>
 		getHighlighter({
 			...options,
-			// @ts-expect-error ???
 			langs: [...Object.keys(bundledLanguages)],
 		}),
 	theme: "github-light",
+	// @ts-expect-error
 	transformers: [transformerNotationDiff()],
 };
 
