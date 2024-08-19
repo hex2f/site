@@ -40,7 +40,7 @@ export default async function BlogPost({
 			<Link href="/" className="text-link hover:opacity-70 absolute left-8 sm:left-16">
 				<span className="">&lt;- home</span>
 			</Link>
-			<article className="mt-8">
+			<article className="mt-8 text-justify">
 				<H1 className="mb-8">
 					{frontmatter.layout === "link" ? (
 						<a

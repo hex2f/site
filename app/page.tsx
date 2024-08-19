@@ -13,7 +13,7 @@ export default async function Home() {
       
       <p className="max-w-2xl">a multi-disciplinary software engineer with a passion for building wonderful user experiences backed by solid engineering principles. dj, music producer, and hardware hobbyist.</p>
 
-      <div className="flex gap-2 flex-wrap">
+      <div className="flex gap-2 flex-wrap text-blue-500">
         <a href="https://github.com/hex2f">[github]</a>
         <a href="https://twitter.com/LeahLundqvist">[twitter]</a>
         <a href="https://linkedin.com/in/hex2f">[linkedin]</a>
