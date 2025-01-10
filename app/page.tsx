@@ -11,16 +11,16 @@ export default async function Home() {
     <main className="px-8 sm:px-16 py-24 sm:py-32 flex flex-col gap-2 text-balance">
       <h1 className="font-bold text-lg"># leah lundqvist</h1>
       
-      <p className="max-w-2xl">a multi-disciplinary software engineer with a passion for building wonderful user experiences backed by solid engineering principles. dj, music producer, and hardware hobbyist.</p>
+      <p className="max-w-2xl">a multi-disciplinary software engineer with a passion for building wonderful user experiences backed by solid engineering principles. occasional dj, music producer, and hardware hobbyist.</p>
 
       <div className="flex gap-2 flex-wrap text-blue-500">
         <a href="https://github.com/hex2f">[github]</a>
-        <a href="https://twitter.com/LeahLundqvist">[twitter]</a>
+        <a href="https://bsky.app/profile/x2f.dev">[bsky]</a>
         <a href="https://linkedin.com/in/hex2f">[linkedin]</a>
-        <a href="https://soundcloud.com/lelow">[soundcloud]</a>
+        <a href="https://soundcloud.com/lelowx">[soundcloud]</a>
       </div>
     
-      <h2 className="font-bold mt-4">## experience</h2>
+      <h2 className="font-bold mt-4"><span className="pr-px">#</span># experience</h2>
       <ul className="list-disc list-inside flex flex-col gap-2 sm:gap-0">
         <Experience years={[2023, -1]} title="founder" at={{ name: "0x57", url: "https://0x57.dev" }} />
         <Experience years={[2021, -1]} title="head of infra" at={{ name: "mainly.ai", url: "https://mainly.ai" }} />
@@ -28,7 +28,7 @@ export default async function Home() {
         <Experience years={[2020, 2021]} title="core maintainer" at={{ name: "vlang", url: "https://vlang.io" }} />
       </ul>
 
-      <h2 className="font-bold mt-4">## blog posts</h2>
+      <h2 className="font-bold mt-4"><span className="pr-px">#</span># blog posts</h2>
       <ul className="list-disc list-inside">
         {posts.map((post: any) => (
           <BlogPost key={post.frontmatter.title} title={post.frontmatter.title} date={post.frontmatter.date.toLocaleDateString()} />
@@ -50,7 +50,7 @@ function Experience({ years, title, at }: { years: [number, number], title: stri
     <li>
       <div className="inline-flex flex-col sm:gap-2 sm:flex-row">
         <div className="flex gap-2">
-          <a href={`/experience/${at.name}`} className="text-blue-500">{title}</a>
+          <a href={`/`} className="text-blue-500">{title}</a>
           <span className="opacity-75">at</span>
           <a href={at.url}>{at.name}</a>
         </div>
